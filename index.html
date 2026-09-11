@@ -4,70 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lode Runner: Mad Monks' Revenge — Xbox Controller Guide</title>
+    <title>MMR Xbox Controller & Quirks Guide</title>
+
+    <meta
+            name="description"
+            content="Xbox controller and JoyToKey configuration for Lode Runner: The Mad Monks' Revenge Definitive Edition, including the Walking Through Floors quirk."
+    >
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
             color: #222;
-            background: #f7f7f7;
+            background: #f2f4f7;
         }
 
         .container {
-            background: white;
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 30px 20px 60px;
         }
 
-        h1 {
-            line-height: 1.2;
+        header {
+            background: #17191c;
+            color: white;
+            padding: 45px 35px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            margin: 0 0 12px;
+            font-size: 2.3rem;
+            line-height: 1.15;
+        }
+
+        header p {
+            margin: 0;
+            color: #d8dbe0;
+            font-size: 1.1rem;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 22px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
         }
 
         h2 {
-            margin-top: 35px;
-            border-bottom: 2px solid #ddd;
+            margin-top: 0;
             padding-bottom: 8px;
+            border-bottom: 2px solid #e5e7eb;
         }
 
-        .mapping {
-            background: #f0f3f7;
-            border-radius: 8px;
-            padding: 20px;
-            font-family: monospace;
+        h3 {
+            margin-top: 28px;
         }
 
         .important {
-            background: #fff4cc;
+            background: #fff7d6;
             border-left: 5px solid #e0ad00;
-            padding: 15px;
+            padding: 16px 18px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .success {
+            background: #e8f7ec;
+            border-left: 5px solid #2e8b57;
+            padding: 16px 18px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .mapping {
+            background: #f3f5f8;
+            border: 1px solid #dde1e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 18px 0;
+            font-family: Consolas, "Courier New", monospace;
+        }
+
+        .controller-diagram {
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            background: #f3f5f8;
+            padding: 22px;
+            border-radius: 8px;
+            text-align: center;
             margin: 20px 0;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 15px;
+            margin: 18px 0;
         }
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
+        th,
+        td {
+            border: 1px solid #dfe3e8;
+            padding: 11px 13px;
             text-align: left;
         }
 
         th {
-            background: #f0f0f0;
+            background: #f3f5f8;
         }
 
         code {
-            background: #eee;
+            background: #eef0f2;
             padding: 2px 5px;
             border-radius: 4px;
+            font-family: Consolas, "Courier New", monospace;
+        }
+
+        a {
+            color: #1559b0;
+        }
+
+        footer {
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -76,134 +145,304 @@
 
 <div class="container">
 
-    <h1>Lode Runner: Mad Monks' Revenge</h1>
+    <header>
+        <h1>Lode Runner: Mad Monks' Revenge</h1>
+        <p>Xbox Controller & JoyToKey Guide for Quirks Mode</p>
+    </header>
 
-    <p>
-        <strong>Xbox Controller & Quirks Mode Guide</strong>
-    </p>
 
-    <p>
-        A community-created Xbox controller configuration for
-        <em>Lode Runner: The Mad Monks' Revenge Definitive Edition</em>.
-    </p>
+    <section>
+        <h2>About This Guide</h2>
 
-    <div class="important">
-        <strong>Important:</strong>
-        This is a community-created controller configuration.
-        It is not an official Quark Robot configuration.
-    </div>
+        <p>
+            This is a community-created Xbox controller configuration for
+            <em>Lode Runner: The Mad Monks' Revenge Definitive Edition</em>.
+            The goal is to make MMR's classic movement quirks easier to perform
+            with an Xbox controller while preserving comfortable joystick movement.
+        </p>
 
-    <h2>Xbox Controller Mapping</h2>
+        <div class="important">
+            <strong>Important:</strong>
+            This is a community-created configuration. It is not an official
+            Quark Robot controller configuration.
+        </div>
 
-    <table>
-        <tr>
-            <th>MMR Action</th>
-            <th>Xbox Input</th>
-        </tr>
-        <tr>
-            <td>Move Up</td>
-            <td>Y</td>
-        </tr>
-        <tr>
-            <td>Move Down</td>
-            <td>A</td>
-        </tr>
-        <tr>
-            <td>Move Left</td>
-            <td>Left Stick ←</td>
-        </tr>
-        <tr>
-            <td>Move Right</td>
-            <td>Left Stick →</td>
-        </tr>
-        <tr>
-            <td>Move Down (alternate)</td>
-            <td>Left Stick ↓ → JoyToKey → NumPad5</td>
-        </tr>
-        <tr>
-            <td>Shoot Left</td>
-            <td>LT</td>
-        </tr>
-        <tr>
-            <td>Shoot Right</td>
-            <td>RT</td>
-        </tr>
-        <tr>
-            <td>Pickup Tool</td>
-            <td>LB</td>
-        </tr>
-        <tr>
-            <td>Use Tool</td>
-            <td>RB</td>
-        </tr>
-    </table>
+        <p>
+            MMR's official documentation explains that <strong>Quirks Mode</strong>
+            preserves most of the known bugs from the original
+            <em>Lode Runner Online: The Mad Monks' Revenge</em>.
+        </p>
 
-    <h2>Simultaneous Up + Down</h2>
+        <p>
+            Official MMR documentation:
+            <a href="https://mmr.quarkrobot.com/manual/quirks-mode" target="_blank" rel="noopener">
+                Quirks Mode
+            </a>
+        </p>
+    </section>
 
-    <p>
-        The important part of this configuration is that
-        <strong>Y</strong> and <strong>A</strong> are independent buttons.
-    </p>
 
-    <div class="mapping">
-        Y = Move Up<br>
-        A = Move Down<br><br>
+    <section>
+        <h2>Xbox Controller Mapping</h2>
 
-        Y + A = Move Up + Move Down simultaneously
-    </div>
+        <p>
+            The core of this configuration is using separate Xbox buttons for
+            <strong>UP</strong> and <strong>DOWN</strong>. This makes it possible
+            to press both directions simultaneously.
+        </p>
 
-    <p>
-        This allows an Xbox controller to perform techniques that
-        require simultaneous opposing directions.
-    </p>
+        <table>
+            <thead>
+            <tr>
+                <th>MMR Action</th>
+                <th>Xbox Input</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Move Up</td>
+                <td><strong>Y</strong></td>
+            </tr>
+            <tr>
+                <td>Move Down</td>
+                <td><strong>A</strong></td>
+            </tr>
+            <tr>
+                <td>Move Left</td>
+                <td><strong>Left Stick ←</strong></td>
+            </tr>
+            <tr>
+                <td>Move Right</td>
+                <td><strong>Left Stick →</strong></td>
+            </tr>
+            <tr>
+                <td>Move Down (additional input)</td>
+                <td><strong>Left Stick ↓ → JoyToKey → NumPad5</strong></td>
+            </tr>
+            <tr>
+                <td>Shoot Left</td>
+                <td><strong>LT</strong></td>
+            </tr>
+            <tr>
+                <td>Shoot Right</td>
+                <td><strong>RT</strong></td>
+            </tr>
+            <tr>
+                <td>Pickup Tool</td>
+                <td><strong>LB</strong></td>
+            </tr>
+            <tr>
+                <td>Use Tool</td>
+                <td><strong>RB</strong></td>
+            </tr>
+            </tbody>
+        </table>
 
-    <h2>JoyToKey Configuration</h2>
+        <h3>Movement Layout</h3>
 
-    <p>
-        JoyToKey is used to provide an additional Down input while
-        preserving normal joystick movement.
-    </p>
+        <div class="controller-diagram">
+            Y = UP
+            <br><br>
+            Left Stick ← = LEFT
+            &nbsp;&nbsp;&nbsp;
+            Left Stick → = RIGHT
+            <br><br>
+            A = DOWN
+        </div>
 
-    <div class="mapping">
-        Left Stick ↓<br>
-        ↓<br>
-        JoyToKey<br>
-        ↓<br>
-        NumPad5<br>
-        ↓<br>
-        MMR Move Down
-    </div>
+        <div class="success">
+            <strong>Simultaneous input:</strong><br><br>
+            Y + A = UP + DOWN simultaneously
+        </div>
+    </section>
 
-    <h2>Why JoyToKey?</h2>
 
-    <p>
-        MMR's native controller bindings provide one gamepad input
-        for each action. JoyToKey allows an additional keyboard input
-        to be generated from the Xbox controller.
-    </p>
+    <section>
+        <h2>Walking Through Floors</h2>
 
-    <h2>Current JoyToKey Down Settings</h2>
+        <p>
+            One reason this controller configuration is useful is MMR's
+            <strong>Walking through floors</strong> quirk.
+        </p>
 
-    <p>
-        The Down assignment uses JoyToKey's analog input level feature
-        so that a more deliberate downward stick movement is required.
-    </p>
+        <p>
+            The official MMR documentation says that this works when you are
+            on a ladder with bedrock below. Hold <strong>UP</strong> while
+            rapidly tapping <strong>DOWN</strong> many times. If DOWN is tapped
+            quickly enough, the player can sink through the floor and enter
+            the room below.
+        </p>
 
-    <div class="mapping">
-        Input 1 = None<br>
-        Input 2 = NumPad5<br>
-        Input 3 = None<br><br>
+        <p>
+            The official documentation credits <strong>Dan Bank</strong>
+            with discovering this quirk.
+        </p>
 
-        Thresholds = 50% / 100%
-    </div>
+        <p>
+            Source:
+            <a href="https://mmr.quarkrobot.com/manual/quirks-mode" target="_blank" rel="noopener">
+                MMR — Quirks Mode: Walking through floors
+            </a>
+        </p>
 
-    <h2>About This Guide</h2>
+        <h3>Xbox Controller Method</h3>
 
-    <p>
-        This configuration was developed and tested specifically
-        for an Xbox controller with MMR. The settings may need
-        adjustment for different controllers or play styles.
-    </p>
+        <div class="mapping">
+            Y = UP<br>
+            A = DOWN<br><br>
+
+            Hold Y + rapidly tap A
+        </div>
+
+        <p>
+            Because Y and A are independent Xbox controller buttons,
+            they can be pressed simultaneously. This makes the
+            <strong>UP + DOWN</strong> input needed for the Walking Through
+            Floors quirk much easier to perform.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>Why JoyToKey Is Used</h2>
+
+        <p>
+            MMR's native gamepad configuration assigns a single gamepad
+            binding to each action. JoyToKey provides an additional input
+            path by converting a controller input into a keyboard key.
+        </p>
+
+        <div class="mapping">
+            Xbox Left Stick ↓<br>
+            ↓<br>
+            JoyToKey<br>
+            ↓<br>
+            Keyboard NumPad5<br>
+            ↓<br>
+            MMR Move Down
+        </div>
+
+        <p>
+            This gives the controller two independent ways to perform DOWN:
+        </p>
+
+        <div class="mapping">
+            Xbox A → MMR Move Down<br>
+            Left Stick ↓ → JoyToKey → NumPad5 → MMR Move Down
+        </div>
+
+        <p>
+            The joystick can therefore remain available for normal movement
+            while the A button provides the deliberate DOWN input needed for
+            simultaneous UP + DOWN.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>JoyToKey Down Configuration</h2>
+
+        <p>
+            A simple direct mapping of Left Stick ↓ to NumPad5 caused an
+            undesirable delay when changing from descending a ladder to
+            moving left or right.
+        </p>
+
+        <p>
+            A more selective analog-input configuration produced a much better
+            result.
+        </p>
+
+        <div class="mapping">
+            Stick1: ↓<br><br>
+
+            Input 1 = None<br>
+            Input 2 = NumPad5<br>
+            Input 3 = None<br><br>
+
+            Thresholds = 50% / 100%
+        </div>
+
+        <p>
+            This makes a more deliberate downward stick movement necessary
+            before JoyToKey generates the virtual DOWN key.
+        </p>
+
+        <div class="success">
+            This configuration substantially reduces the ladder-transition
+            problem caused by a continuously active virtual DOWN input.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>JoyToKey Profile</h2>
+
+        <p>
+            The JoyToKey configuration should be kept in an
+            <strong>MMR-specific profile</strong> so that the virtual
+            NumPad5 input does not affect Windows or other games.
+        </p>
+
+        <p>
+            Recommended profile name:
+        </p>
+
+        <div class="mapping">
+            MMR - Lode Runner
+        </div>
+
+        <p>
+            Associate the profile with the MMR executable so JoyToKey
+            automatically uses these mappings while MMR is running.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>MMR Configuration</h2>
+
+        <p>
+            MMR stores keyboard and gamepad bindings in its
+            <code>CONFIG.XML</code> configuration file. The official
+            documentation explains that the configuration file stores
+            keyboard and gamepad bindings and that the gamepad dead-zone
+            threshold applies to the thumb sticks.
+        </p>
+
+        <p>
+            Official configuration documentation:
+            <a href="https://mmr.quarkrobot.com/manual/config-file" target="_blank" rel="noopener">
+                MMR Configuration File
+            </a>
+        </p>
+    </section>
+
+
+    <section>
+        <h2>Important Distinction</h2>
+
+        <p>
+            The <strong>Walking Through Floors</strong> behavior itself is
+            an officially documented MMR quirk. The Xbox + JoyToKey mapping
+            described on this page is a <strong>community-created controller
+            solution</strong> for making the required UP + DOWN input easier
+            to perform.
+        </p>
+
+        <p>
+            The official MMR documentation credits the discovery of
+            Walking Through Floors to <strong>Dan Bank</strong>.
+        </p>
+    </section>
+
+
+    <footer>
+        <p>
+            Community-created guide for Lode Runner: The Mad Monks' Revenge
+            Definitive Edition.
+        </p>
+    </footer>
 
 </div>
 

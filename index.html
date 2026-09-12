@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MMR Xbox Controller & Quirks Guide</title>
+    <title>MMR Xbox Controller &amp; Quirks Guide</title>
 
     <meta
             name="description"
@@ -104,6 +104,23 @@
             margin: 20px 0;
         }
 
+        .config-image {
+            display: block;
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            margin: 20px auto 10px;
+            border: 1px solid #dfe3e8;
+            border-radius: 8px;
+        }
+
+        .image-caption {
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -147,7 +164,7 @@
 
     <header>
         <h1>Lode Runner: Mad Monks' Revenge</h1>
-        <p>Xbox Controller & JoyToKey Guide for Quirks Mode</p>
+        <p>Xbox Controller &amp; JoyToKey Guide for Quirks Mode</p>
     </header>
 
 
@@ -175,7 +192,11 @@
 
         <p>
             Official MMR documentation:
-            <a href="https://mmr.quarkrobot.com/manual/quirks-mode" target="_blank" rel="noopener">
+            <a
+                    href="https://mmr.quarkrobot.com/manual/quirks-mode"
+                    target="_blank"
+                    rel="noopener"
+            >
                 Quirks Mode
             </a>
         </p>
@@ -186,9 +207,10 @@
         <h2>Xbox Controller Mapping</h2>
 
         <p>
-            The core of this configuration is using separate Xbox buttons for
-            <strong>UP</strong> and <strong>DOWN</strong>. This makes it possible
-            to press both directions simultaneously.
+            The key change in this configuration is assigning the Xbox
+            <strong>A</strong> button to <strong>Move Down</strong> while
+            retaining the <strong>Left Stick</strong> for the other movement
+            directions. This makes it possible to press UP and DOWN simultaneously.
         </p>
 
         <table>
@@ -198,39 +220,50 @@
                 <th>Xbox Input</th>
             </tr>
             </thead>
+
             <tbody>
             <tr>
                 <td>Move Up</td>
-                <td><strong>Y</strong></td>
+                <td><strong>Left Stick ↑</strong></td>
             </tr>
+
             <tr>
                 <td>Move Down</td>
                 <td><strong>A</strong></td>
             </tr>
+
             <tr>
                 <td>Move Left</td>
                 <td><strong>Left Stick ←</strong></td>
             </tr>
+
             <tr>
                 <td>Move Right</td>
                 <td><strong>Left Stick →</strong></td>
             </tr>
+
             <tr>
                 <td>Move Down (additional input)</td>
-                <td><strong>Left Stick ↓ → JoyToKey → NumPad5</strong></td>
+                <td>
+                    <strong>Left Stick ↓ → JoyToKey → NumPad5</strong>
+                </td>
             </tr>
+
             <tr>
                 <td>Shoot Left</td>
                 <td><strong>LT</strong></td>
             </tr>
+
             <tr>
                 <td>Shoot Right</td>
                 <td><strong>RT</strong></td>
             </tr>
+
             <tr>
                 <td>Pickup Tool</td>
                 <td><strong>LB</strong></td>
             </tr>
+
             <tr>
                 <td>Use Tool</td>
                 <td><strong>RB</strong></td>
@@ -238,21 +271,39 @@
             </tbody>
         </table>
 
+
+        <h3>MMR Controller Configuration</h3>
+
+        <img
+                src="images/controller-config.png"
+                alt="Lode Runner: The Mad Monks' Revenge Xbox controller configuration"
+                class="config-image"
+        >
+
+        <p class="image-caption">
+            MMR controller configuration used by this guide.
+        </p>
+
+
         <h3>Movement Layout</h3>
 
         <div class="controller-diagram">
-            Y = UP
+            Left Stick ↑ = UP
             <br><br>
+
             Left Stick ← = LEFT
             &nbsp;&nbsp;&nbsp;
             Left Stick → = RIGHT
             <br><br>
+
             A = DOWN
         </div>
 
+
         <div class="success">
-            <strong>Simultaneous input:</strong><br><br>
-            Y + A = UP + DOWN simultaneously
+            <strong>Simultaneous input:</strong>
+            <br><br>
+            Left Stick ↑ + A = UP + DOWN simultaneously
         </div>
     </section>
 
@@ -280,23 +331,29 @@
 
         <p>
             Source:
-            <a href="https://mmr.quarkrobot.com/manual/quirks-mode" target="_blank" rel="noopener">
+            <a
+                    href="https://mmr.quarkrobot.com/manual/quirks-mode"
+                    target="_blank"
+                    rel="noopener"
+            >
                 MMR — Quirks Mode: Walking through floors
             </a>
         </p>
 
+
         <h3>Xbox Controller Method</h3>
 
         <div class="mapping">
-            Y = UP<br>
-            A = DOWN<br><br>
-
-            Hold Y + rapidly tap A
+            Left Stick ↑ = UP
+            <br>
+            A = DOWN
+            <br><br>
+            Hold Left Stick ↑ + rapidly tap A
         </div>
 
         <p>
-            Because Y and A are independent Xbox controller buttons,
-            they can be pressed simultaneously. This makes the
+            Because the Left Stick and A button provide independent inputs,
+            they can be used simultaneously. This makes the
             <strong>UP + DOWN</strong> input needed for the Walking Through
             Floors quirk much easier to perform.
         </p>
@@ -307,18 +364,23 @@
         <h2>Why JoyToKey Is Used</h2>
 
         <p>
-            MMR's native gamepad configuration assigns a single gamepad
-            binding to each action. JoyToKey provides an additional input
-            path by converting a controller input into a keyboard key.
+            JoyToKey provides an additional input path by converting a
+            controller input into a keyboard key.
         </p>
 
         <div class="mapping">
-            Xbox Left Stick ↓<br>
-            ↓<br>
-            JoyToKey<br>
-            ↓<br>
-            Keyboard NumPad5<br>
-            ↓<br>
+            Xbox Left Stick ↓
+            <br>
+            ↓
+            <br>
+            JoyToKey
+            <br>
+            ↓
+            <br>
+            Keyboard NumPad5
+            <br>
+            ↓
+            <br>
             MMR Move Down
         </div>
 
@@ -327,13 +389,14 @@
         </p>
 
         <div class="mapping">
-            Xbox A → MMR Move Down<br>
+            Xbox A → MMR Move Down
+            <br>
             Left Stick ↓ → JoyToKey → NumPad5 → MMR Move Down
         </div>
 
         <p>
             The joystick can therefore remain available for normal movement
-            while the A button provides the deliberate DOWN input needed for
+            while the A button provides the separate DOWN input needed for
             simultaneous UP + DOWN.
         </p>
     </section>
@@ -349,28 +412,51 @@
         </p>
 
         <p>
-            A more selective analog-input configuration produced a much better
-            result.
+            A more selective analog-input configuration was used to add the
+            additional DOWN input while keeping the controller's normal
+            movement behavior as close as possible to MMR's default settings.
         </p>
 
         <div class="mapping">
-            Stick1: ↓<br><br>
+            Stick1: ↓
+            <br><br>
 
-            Input 1 = None<br>
-            Input 2 = NumPad5<br>
-            Input 3 = None<br><br>
+            Input 1 = None
+            <br>
+            Input 2 = NumPad5
+            <br>
+            Input 3 = NumPad5
+            <br><br>
 
-            Thresholds = 50% / 100%
+            Thresholds = 50% / 101%
         </div>
 
         <p>
-            This makes a more deliberate downward stick movement necessary
-            before JoyToKey generates the virtual DOWN key.
+            The first threshold is set to <strong>50%</strong>, matching MMR's
+            default <code>DeadZoneThreshold</code> value of
+            <code>0.35</code>.
+        </p>
+
+        <p>
+            The second threshold is set to <strong>101%</strong>, beyond the
+            normal 0–100% analog input range, so Input 2 remains the active
+            range through the maximum usable stick deflection.
         </p>
 
         <div class="success">
-            This configuration substantially reduces the ladder-transition
-            problem caused by a continuously active virtual DOWN input.
+            <strong>Current configuration:</strong>
+            <br><br>
+            Stick 1 threshold: 2%
+            <br>
+            Stick1: ↓ → Keyboard (Multi)
+            <br>
+            Input 1 = None
+            <br>
+            Input 2 = NumPad5
+            <br>
+            Input 3 = NumPad5
+            <br>
+            Thresholds = 50% / 101%
         </div>
     </section>
 
@@ -404,15 +490,16 @@
 
         <p>
             MMR stores keyboard and gamepad bindings in its
-            <code>CONFIG.XML</code> configuration file. The official
-            documentation explains that the configuration file stores
-            keyboard and gamepad bindings and that the gamepad dead-zone
-            threshold applies to the thumb sticks.
+            <code>CONFIG.XML</code> configuration file.
         </p>
 
         <p>
             Official configuration documentation:
-            <a href="https://mmr.quarkrobot.com/manual/config-file" target="_blank" rel="noopener">
+            <a
+                    href="https://mmr.quarkrobot.com/manual/config-file"
+                    target="_blank"
+                    rel="noopener"
+            >
                 MMR Configuration File
             </a>
         </p>
@@ -439,8 +526,8 @@
 
     <footer>
         <p>
-            Community-created guide for Lode Runner: The Mad Monks' Revenge
-            Definitive Edition.
+            Community-created guide for
+            Lode Runner: The Mad Monks' Revenge Definitive Edition.
         </p>
     </footer>
 
